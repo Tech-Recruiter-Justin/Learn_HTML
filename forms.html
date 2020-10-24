@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Profile Update</h1>
+
+    <div>
+        <form action="/update">
+            <label for="username">Enter your user name:</label>
+            <input type="email" placeholder="user name/ email" id="username" name="username" required><br><br>
+
+            <label for="password">Enter your password:</label>
+            <input type="password" placeholder="you have 3 chances" id="password" name="password"><br><br>
+
+            <label for="bkgcolour" name="colour">What wallpaper colour do you want?</label>
+            <input type="color" id="bkgcolour"><br><br>
+
+            <label for="age">What is your age?</label>
+            <input type="number" placeholder="numbers only" id="age" name="age"><br><br>
+
+            <button type="submit">Real Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <br>
+
+    <div>
+        <form action="submit.html">
+            <button type="submit">Fake Submit</button>
+        </form>
+    </div>
+
+    <h1>Google Search</h1>
+    <div>
+        <form action="https://www.google.com/search">
+            <label for="Google">You may do a Google quick search here:</label>
+            <input type="text" placeholder="search Google" id="Google" name="q">
+            <button>Search</button>
+        </form>
+    </div>
+
+    <h1>Purchase Memember T-Shirt</h1>
+
+    <form action="/tshirt">
+        <p>
+            <label for="agree">Sure you want to buy the t-shirt?</label>
+            <input type="checkbox" name="agree" id="agree" required>
+        </p>
+
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs" required>
+
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+
+        <p>
+            <label for="location">Where would you like to pick up the search?</label>
+            <select name="location" id="location" required>
+                <option value="" selected disabled hidden>Pleaes Select</option>
+                <option value="taipo">Tai Po</option>
+                <option value="shatin">Sha Tin</option>
+                <option value="central">Central</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="amount">How many do you want? (5 max per member)</label>
+            <input type="range" id="amount" min="1" max="5" value="1" required value="">
+        </p>
+
+        <p>
+            <label for="feedback">Pleae give us some feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="(Optional)"></textarea>
+        </p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+
+</html>
